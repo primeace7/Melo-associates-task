@@ -4,6 +4,8 @@ Preparing for an interview shouldn't be a manual grind. The **Interview Question
 
 By leveraging Google's Gemini 3.5 Flash AI, the app translates a simple job title into three high-impact questions designed to probe for both technical depth and behavioral fit.
 
+**Live Demo**: [https://melo-associates---task.web.app/](https://melo-associates---task.web.app/)
+
 ## ✨ Key Features
 
 -   **Intelligent Tailoring**: Generates questions specifically crafted for the job title provided.
