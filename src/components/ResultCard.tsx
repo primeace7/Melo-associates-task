@@ -14,7 +14,7 @@ function buildCopyText(result: InferenceResult): string {
   lines.push(
     `1. ${result.question1}`,
     `2. ${result.question2}`,
-    `3. ${result.question3}`
+    `3. ${result.question3}`,
   );
   return lines.join("\n");
 }
@@ -92,9 +92,9 @@ const ResultCard: React.FC<ResultCardProps> = ({ result }) => {
 
       {/* Questions */}
       <div className="flex flex-col gap-3">
-        <QuestionItem number={1} text={result.question1} />
-        <QuestionItem number={2} text={result.question2} />
-        <QuestionItem number={3} text={result.question3} />
+        <QuestionItem number={1} text={result.question1 ?? ""} />
+        <QuestionItem number={2} text={result.question2 ?? ""} />
+        <QuestionItem number={3} text={result.question3 ?? ""} />
       </div>
     </div>
   );
