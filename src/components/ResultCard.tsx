@@ -40,9 +40,7 @@ const QuestionItem: React.FC<{ number: number; text: string }> = ({
     >
       {number}
     </span>
-    <p className="font-body text-white/80 text-sm leading-relaxed pt-0.5">
-      {text}
-    </p>
+    <p className="font-body text-white/80 leading-relaxed pt-0.5">{text}</p>
   </div>
 );
 
@@ -53,7 +51,7 @@ const ResultCard: React.FC<ResultCardProps> = ({ result }) => {
     <div className="animate-slide-up w-full max-w-2xl mx-auto">
       {/* Card header */}
       <div className="flex items-center justify-between mb-4">
-        <h2 className="font-display text-sm font-semibold text-white/50 uppercase tracking-widest">
+        <h2 className="font-display md:text-lg font-semibold text-white/50 uppercase tracking-widest">
           Interview Questions
         </h2>
         <button
@@ -85,7 +83,7 @@ const ResultCard: React.FC<ResultCardProps> = ({ result }) => {
 
       {/* Description */}
       {result.description && (
-        <p className="font-body text-white/50 text-sm leading-relaxed mb-5 px-1">
+        <p className="font-body text-white/50 leading-relaxed mb-5 px-1">
           {result.description}
         </p>
       )}

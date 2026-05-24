@@ -27,7 +27,7 @@ const SuggestedInputs: React.FC<SuggestedInputsProps> = ({
           disabled={disabled}
           onClick={() => onSelect(s)}
           className="
-            px-3 py-1.5 rounded-full text-xs font-body font-medium
+            px-3 py-1.5 rounded-full sm:text-xs md:text-lg font-body font-medium
             border border-white/10 text-white/60
             bg-white/5 hover:bg-white/10 hover:text-white/90
             transition-all duration-200

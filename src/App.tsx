@@ -70,17 +70,17 @@ function App() {
         <header className="text-center mb-12 max-w-xl">
           <div className="inline-flex items-center gap-2 mb-5 px-3 py-1 rounded-full border border-indigo-500/20 bg-indigo-500/10">
             <span className="block w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse" />
-            <span className="font-body text-xs text-indigo-300/80 tracking-wide">
+            <span className="font-body text-s text-indigo-300/80 tracking-wide">
               AI-Powered Interview Prep
             </span>
           </div>
-          <h1 className="font-display text-4xl sm:text-5xl font-bold text-white leading-tight mb-3">
+          <h1 className="font-display text-5xl sm:text-3xl md:text-6xl font-bold text-white leading-tight mb-3">
             Nail your next{" "}
             <span className="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
               interview
             </span>
           </h1>
-          <p className="font-body text-white/40 text-base sm:text-lg leading-relaxed">
+          <p className="font-body text-white/40 text-base sm:text-lg md:text-xl leading-relaxed">
             Enter any job title and get three thoughtful, tailored interview
             questions in seconds.
           </p>
@@ -128,7 +128,7 @@ function App() {
                       Submitting
                     </>
                   ) : (
-                    "Generate →"
+                    "Generate"
                   )}
                 </button>
               </div>
@@ -138,7 +138,7 @@ function App() {
           {/* Suggested inputs */}
           {!result && (
             <div className="mt-4">
-              <p className="font-body text-xs text-white/25 text-center mb-3 tracking-wide uppercase">
+              <p className="font-body md:text-lg sm:text-xs text-white/25 text-center mb-3 tracking-wide uppercase">
                 Try a suggestion
               </p>
               <SuggestedInputs
